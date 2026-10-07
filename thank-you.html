@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Thank You for Your Purchase | Belly Fat Without HIIT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f4ea;--card:#fff;--ink:#11271d;--muted:#4b5d53;--g1:#0b3d2c;--g2:#126a3e;--g3:#1a8a45;--soft:#e4ecd6}
+    @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a14;--card:#18261d;--ink:#eef3ea;--muted:#a9b9ad;--g1:#0b3d2c;--g2:#126a3e;--g3:#1a8a45}}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,system-ui,sans-serif;line-height:1.5;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+    .container{max-width:600px;text-align:center;background:var(--card);padding:60px 30px;border-radius:16px;box-shadow:0 10px 40px rgba(11,61,44,.15)}
+    h1{font-size:48px;margin:0 0 12px;font-weight:800;color:var(--g1)}
+    .checkmark{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--g2),var(--g3));display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:48px}
+    .sub{font-size:18px;color:var(--muted);margin:0 0 24px;line-height:1.5}
+    .info{background:var(--soft);border-radius:12px;padding:20px;margin:24px 0;text-align:left;font-size:14px}
+    .info p{margin:8px 0}
+    .info b{color:var(--g1)}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(#1b8a47,#12703a);color:#fff;font-weight:700;border-radius:40px;padding:14px 30px;font-size:16px;box-shadow:0 6px 16px rgba(11,61,44,.3);border:none;cursor:pointer;text-decoration:none;margin-top:20px}
+    .btn:hover{box-shadow:0 8px 20px rgba(11,61,44,.4);transform:translateY(-2px)}
+    footer{text-align:center;font-size:12px;color:var(--muted);margin-top:40px;padding-top:20px;border-top:1px solid #dfe3d3}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="checkmark">✓</div>
+  <h1>Thank You!</h1>
+  <p class="sub">Your purchase is complete and your planner is ready to download.</p>
+  
+  <div class="info">
+    <p><b>What's next?</b></p>
+    <p>✓ Check your email for download instructions</p>
+    <p>✓ You have lifetime access to your PDF</p>
+    <p>✓ Start your 4-week journey whenever you're ready</p>
+  </div>
+
+  <p style="color:var(--muted);font-size:14px;">If you don't see a download link or email within a few moments, check your spam folder or contact support through Whop.</p>
+
+  <a class="btn" href="https://felonizevoltage54-max.github.io/bellyfat-without-HIIT/">← Back to Home</a>
+
+  <footer>
+    <p>Belly Fat Without HIIT | A Joint-Friendly Approach for Adults 40+</p>
+  </footer>
+</div>
+
+<script>
+  // Capture affiliate code from URL
+  const affiliateCode = new URLSearchParams(window.location.search).get('a');
+  if (affiliateCode) {
+    console.log('Affiliate Code from Thank You Page:', affiliateCode);
+    // Here you can send affiliate conversion data to your tracking system
+    // Example:
+    // fetch("https://your-affiliate-tracking.com/convert?a=" + encodeURIComponent(affiliateCode));
+  }
+  
+  // Optional: Send conversion event to analytics
+  if (window.gtag) {
+    gtag('event', 'purchase', {
+      'value': 17.99,
+      'currency': 'USD',
+      'affiliate': affiliateCode || 'direct'
+    });
+  }
+</script>
+
+</body>
+</html>
